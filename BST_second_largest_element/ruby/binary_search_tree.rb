@@ -1,4 +1,4 @@
-require_relative './binary_tree_node.rb'
+require_relative './node.rb'
 
 class BinarySearchTree
 
