@@ -1,6 +1,5 @@
 class Node
-  attr_accessor :value
-  attr_reader :left, :right
+  attr_accessor :value, :left, :right
 
   def initialize(value)
     @value = value

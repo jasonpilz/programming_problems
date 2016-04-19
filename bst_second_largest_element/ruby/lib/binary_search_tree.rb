@@ -11,7 +11,7 @@ class BinarySearchTree
     @head = insert_node(@head, val)
   end
 
-  def find_largest(node)
+  def find_largest(node=@head)
     current = node
     while current
       return current.value if !current.right
@@ -19,7 +19,7 @@ class BinarySearchTree
     end
   end
 
-  def find_second_largest(root_node)
+  def find_second_largest(root_node=@head)
     if !root_node.left && !root_node.right
       raise Exception, 'Tree must have at least 2 nodes'
     end
